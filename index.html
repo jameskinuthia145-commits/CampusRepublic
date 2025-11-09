@@ -7,6 +7,17 @@
  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
   <link rel="stylesheet" href="dist/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script // Google
+await supabaseClient.auth.signInWithOAuth({
+  provider: 'google',
+  options: { redirectTo: 'https://jameskinuthia145-commits.github.io/CampusRepublic/' }
+});
+
+// Magic link
+await supabaseClient.auth.signInWithOtp({
+  email,
+  options: { emailRedirectTo: 'https://jameskinuthia145-commits.github.io/CampusRepublic/' }
+});><script>
   <script>
     // Site owner Supabase Auth user ID (granted admin on all newly created communities)
     window.SITE_OWNER_ID = 'a9082745-e70d-46ea-8992-7231a729290f';
