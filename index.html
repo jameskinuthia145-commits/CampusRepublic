@@ -7,6 +7,13 @@
  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1">
   <link rel="stylesheet" href="dist/styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <link rel="stylesheet" href="dist/styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  // Site owner Supabase Auth user ID (granted admin on all newly created communities)
+  // Keep only simple assignments or non-async initialization here. Do NOT use top-level await.
+  window.SITE_OWNER_ID = 'a9082745-e70d-46ea-8992-7231a729290f';
+</script>
   <script // Google
 await supabaseClient.auth.signInWithOAuth({
   provider: 'google',
